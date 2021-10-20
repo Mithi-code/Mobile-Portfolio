@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@ header {
 }
 
 header p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 70px;
   align-self: center;
   cursor: pointer;
