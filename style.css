@@ -34,10 +34,11 @@ section {
   background-color: #1c1a19;
   height: 100vh;
 }
+
 #title {
   color: #ff6b00;
   font-size: 130px;
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   padding: 20px 20px;
   margin-top: 220px;
 }
@@ -46,14 +47,14 @@ section {
   color: #fff5e1;
   font-size: 45px;
   line-height: 2;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   padding: 30px;
 }
 
 #text2 {
-  color: #ffffff;
+  color: #fff;
   font-size: 38px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   padding: 10px 20px;
 }
 
