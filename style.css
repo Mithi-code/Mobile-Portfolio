@@ -1,1 +1,28 @@
-h1 { color: red; }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 19%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3c3a39;
+  color: aliceblue;
+  height: 200px;
+  padding: 20px 20px;
+}
+
+header p {
+  font-family: "Roboto";
+  font-size: 70px;
+  align-self: center;
+  cursor: pointer;
+}
