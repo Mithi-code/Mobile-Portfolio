@@ -21,8 +21,19 @@ header {
   padding: 20px 20px;
 }
 
-header p {
+header nav {
+  align-self: center;
+}
+
+header nav img {
+  width: 85px;
+  height: 70px;
+}
+
+header a {
   font-family: "Roboto", sans-serif;
+  color: #fff5e1;
+  text-decoration: none;
   font-size: 70px;
   align-self: center;
   cursor: pointer;
