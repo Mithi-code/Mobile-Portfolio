@@ -23,6 +23,7 @@ nav {
   height: 70px;
   padding: 10px;
 }
+
 main {
   margin: auto;
 }
@@ -56,7 +57,6 @@ section {
   font-weight: 700;
   line-height: 2;
   font-family: "Roboto", sans-serif;
-  
 }
 
 #text2 {
@@ -65,7 +65,6 @@ section {
   font-size: 16px;
   line-height: 2;
   font-family: "Poppins", sans-serif;
-  
 }
 
 #social_menu {
