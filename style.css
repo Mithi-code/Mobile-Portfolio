@@ -90,6 +90,12 @@ header nav a {
   margin-bottom: 132px;
 }
 
+span img {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+}
+
 #work img {
   justify-content: center;
 }
@@ -145,7 +151,7 @@ header nav a {
 }
 
 .click {
-  text-align: center;
+  padding: 7px;
   width: 49px;
   height: 40px;
   border: 1px solid gray;
@@ -205,6 +211,8 @@ header nav a {
   width: 327px;
   background-color: #ff6b00;
   height: 48px;
+  font-size: 17px;
+  color: #fff;
   outline: none;
   border: none;
 }
@@ -214,14 +222,19 @@ header nav a {
   width: 375px;
   margin: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 #about_content {
+  height: 90vh;
   margin-left: 24px;
+  background-image: url(./aboutme/about.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border-bottom: 1px solid #fff;
 }
 
 #about_content h1 {
+  margin-top: 120px;
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
   font-size: 72px;
@@ -233,7 +246,7 @@ header nav a {
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
-  line-height: 1;
+  line-height: 24px;
   margin: 24px 0 24px;
 }
 
@@ -246,4 +259,30 @@ header nav a {
   height: 48px;
   width: 161px;
   color: #fff;
+}
+
+.lang_title {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+}
+
+#about_language {
+  display: grid;
+  margin-top: 130px;
+  gap: 20px;
+  margin-bottom: 130px;
+}
+
+#about_language li {
+  font-size: 22px;
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
