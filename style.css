@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +9,7 @@
   box-sizing: border-box;
 }
 
-body {
+.main {
   width: 375px;
   margin: auto;
   display: flex;
@@ -36,7 +37,7 @@ header nav a {
   align-self: center;
 }
 
-section {
+#intro {
   height: 90vh;
   background: url("./image.png") 100% 100% no-repeat;
   background-color: #1c1a19;
@@ -76,6 +77,116 @@ section {
   padding: 20px;
 }
 
+/* .work_main {
+  display: grid;
+  grid-template-columns: auto;
+} */
+
 #work {
+  background-color: #e5e5e5;
+}
+
+#work img {
+  justify-content: center;
+}
+
+#work_content {
+  margin: 24px 0 0 24px;
+}
+
+#work_name {
   color: #1c1a19;
+  text-align: center;
+  font-family: "Crete Round", sans-serif;
+  margin-top: 120px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.img {
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.b {
+  margin-top: 80px;
+}
+
+#work_info {
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+}
+
+.work_project p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 2;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+#work_content p {
+  font-size: 16px;
+  margin: 12px 11px 0 0;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.click {
+  width: 49px;
+  height: 40px;
+  margin: 10px 0 4px 4px;
+  font-size: 15px;
+}
+
+.a {
+  width: 95px;
+  height: 40px;
+}
+
+#P_button {
+  background-color: #ff6b00;
+  color: #fff;
+  font-size: 17px;
+  width: 124px;
+  height: 48px;
+  margin: 10px 0 0 0;
+}
+
+.work_project {
+  background: url(./workImg/work.png);
+  height: 386px;
+  width: 327px;
+  margin-top: 24px;
+  margin-left: 24px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  justify-content: center;
+}
+
+.work_project h1 {
+  margin: 84px 0 0 0;
+  color: #fff;
+  font-family: "Crete Round", sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+  margin-left: 16px;
+}
+
+.work_project .click {
+  background: rgba(255, 255, 255, 0.24);
+  margin-left: 16px;
+}
+
+.z {
+  width: 327px;
+  background-color: #ff6b00;
+  height: 48px;
+  outline: none;
+  border: none;
 }
