@@ -348,3 +348,23 @@ textarea {
   border-bottom: 3px solid #DFE1E6;
   margin: 24px 122px 124px 85px;
 }
+
+
+footer {
+  margin: auto;
+  /* height: 81px; */
+  width: 375px;
+  background: #E5E5E5;
+}
+
+footer #social_menu {
+  margin-top: 25px;
+  margin-left: 99px;
+}
+
+hr {
+  color: #0D151E;
+  margin: auto;
+  width: 131px;
+  margin-top: 23px;
+}
