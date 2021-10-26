@@ -340,6 +340,7 @@ textarea {
 #contact_form button {
   width: 131px;
   height: 48px;
+  font-weight: 700;
   background-color: #ff6b00;
   font-size: 17px;
   color: #fff;
@@ -350,7 +351,19 @@ textarea {
 }
 
 #contact_form button:hover {
+  background-color: #FFF5E1;
   transform: scale(1.1);
+}
+
+#contact_form button:active {
+  background-color: #E05304;
+}
+#contact_form button:enabled {
+  background: #F55800;
+}
+
+#contact_form button:disabled {
+  background-color: #F4F1F0;
 }
 
 footer {
