@@ -346,6 +346,10 @@ textarea {
   border: none;
   border-bottom: 3px solid #dfe1e6;
   margin: 24px 122px 124px 85px;
+  transition: transform .2s;
+}
+#contact_form button:hover {
+  transform: scale(1.1);
 }
 
 footer {
