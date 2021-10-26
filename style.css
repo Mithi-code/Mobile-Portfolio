@@ -351,19 +351,20 @@ textarea {
 }
 
 #contact_form button:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   transform: scale(1.1);
 }
 
 #contact_form button:active {
-  background-color: #E05304;
+  background-color: #e05304;
 }
+
 #contact_form button:enabled {
-  background: #F55800;
+  background: #f55800;
 }
 
 #contact_form button:disabled {
-  background-color: #F4F1F0;
+  background-color: #f4f1f0;
 }
 
 footer {
