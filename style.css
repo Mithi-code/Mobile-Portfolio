@@ -291,3 +291,60 @@ span img {
   margin-top: 24px;
   margin-bottom: 24px;
 }
+
+#contact_form {
+  width: 375px;
+  margin: auto;
+  background: #E5E5E5;
+  height: 100%;
+  border-bottom: 2px solid #DFE1E6;
+}
+
+#contact_form p {
+ margin: 120px 24px 73px 24px;
+ text-align: center;
+ font-weight: 700;
+ font-size: 32px;
+ font-family: "Inter", sans-serif;
+ color: #172B4D;
+ line-height: 44px;
+}
+
+#contact_form p span {
+  display: none;
+}
+
+form {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+   border: none;
+   outline: none;
+   background: #E5E5E5;
+   border-bottom: 1px solid #DBD8D7;
+   color: #979493;
+}
+
+textarea {
+  border: none;
+  background: #FBF8F7;
+  color: #3C3A39;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#contact_form button{
+  width: 131px;
+  height: 48px;
+  background-color: #ff6b00;
+  font-size: 17px;
+  color: #FFFFFF;
+  border: none;
+  border-bottom: 3px solid #DFE1E6;
+  margin: 24px 122px 124px 85px;
+}
