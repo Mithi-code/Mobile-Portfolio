@@ -295,19 +295,18 @@ span img {
 #contact_form {
   width: 375px;
   margin: auto;
-  background: #E5E5E5;
+  background: #e5e5e5;
   height: 100%;
-  border-bottom: 2px solid #DFE1E6;
 }
 
 #contact_form p {
- margin: 120px 24px 73px 24px;
- text-align: center;
- font-weight: 700;
- font-size: 32px;
- font-family: "Inter", sans-serif;
- color: #172B4D;
- line-height: 44px;
+  margin: 120px 24px 73px 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  color: #172b4d;
+  line-height: 44px;
 }
 
 #contact_form p span {
@@ -322,39 +321,37 @@ form {
 }
 
 form input {
-   border: none;
-   outline: none;
-   background: #E5E5E5;
-   border-bottom: 1px solid #DBD8D7;
-   color: #979493;
+  border: none;
+  outline: none;
+  background: #e5e5e5;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
 }
 
 textarea {
   border: none;
-  background: #FBF8F7;
-  color: #3C3A39;
+  background: #fbf8f7;
+  color: #3c3a39;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
 
-#contact_form button{
+#contact_form button {
   width: 131px;
   height: 48px;
   background-color: #ff6b00;
   font-size: 17px;
-  color: #FFFFFF;
+  color: #fff;
   border: none;
-  border-bottom: 3px solid #DFE1E6;
+  border-bottom: 3px solid #dfe1e6;
   margin: 24px 122px 124px 85px;
 }
 
-
 footer {
   margin: auto;
-  /* height: 81px; */
   width: 375px;
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 footer #social_menu {
@@ -362,9 +359,12 @@ footer #social_menu {
   margin-left: 99px;
 }
 
-hr {
-  color: #0D151E;
-  margin: auto;
-  width: 131px;
+#border {
+  margin-left: 130px;
   margin-top: 23px;
+  width: 131px;
+  background: #0d151e;
+  border-style: solid;
+  border-radius: 8px;
+  border-bottom-width: 4px;
 }
