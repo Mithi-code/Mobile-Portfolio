@@ -12,10 +12,19 @@
       <header>
         <nav>
           <a href="#">LazyCoder</a>
-          <img src="./menu.png" alt="" />
+          <img src="./menu.png" alt="" class="hamburger"/>
+          <ul id="menu_content">
+            <li>Portoflio</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>
+              <img src="./Icon - Mail.png" alt="">
+            </li>
+          </ul>
         </nav>
       </header>
       <section id="intro">
+        <div id="intro_box">
         <h1 id="title">
           Hey There.<br />
           I’m Mithlesh
@@ -26,6 +35,8 @@
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
         </p>
+          <img src="./main-background.png" alt="" class="background_image">
+      </div>
         <ul id="social_menu">
           <li>
             <a
@@ -66,10 +77,13 @@
     </div>
     <div class="work_main">
       <section id="work">
-        <h1 id="work_name">My Recent Works</h1>
-        <img src="./workImg/line.png" alt="" class="img" />
-        <img src="./workImg/Placeholder.png" alt="" class="img b" />
+        <div id="work_title">
+          <h1 id="work_name">My Recent Works</h1>
+          <img src="./workImg/line.png" alt="" class="img" />
+        </div>
         <div id="work_content">
+          <img src="./workImg/Placeholder.png" alt="" class="img b" />
+          <div id="work_content2">
           <h1 id="work_info">Multi-Post Stories</h1>
           <p>
             A daily selection of privately personalized reads; no accounts or
@@ -84,7 +98,12 @@
             <li class="click">Ruby</li>
           </ul>
           <button id="P_button" type="button">See Project</button>
+          </div>
         </div>
+        <div id="cards">
+          <div class="work_project visible" >
+            <button class="z" type="button">See Project</button>
+          </div>
         <div class="work_project">
           <h1>Profesional Art Printing Data</h1>
           <p>
@@ -150,6 +169,7 @@
           </ul>
           <button class="z" type="submit">See Project</button>
         </div>
+      </div>
       </section>
     </div>
     <section id="about_me">
@@ -157,15 +177,16 @@
         <div class="u">
           <h1>About me</h1>
           <p>
-            Hello I’m a software developer! I can help <br />you build a product
-            , feature or website <br />Look through some of my work and
-            <br />experience! If you like what you see and <br />have a project
-            you need coded, don’t <br />hestiate to contact me.
+            Hello I’m a software developer! I can help <br/>you build a product
+            , feature or website <br/>Look through some of my work and
+            <br/>experience! If you like what you see and <br/>have a project
+            you need coded, don’t <br/>hestiate to contact me.
           </p>
           <button type="button">Get My Resume</button>
         </div>
       </div>
       <div id="about_language">
+        <div>
         <div class="lang_title">
           <span><img src="./aboutme/rec.png" alt="" />Language</span>
         </div>
@@ -175,6 +196,8 @@
           <li>Html</li>
           <li>Css</li>
         </ul>
+      </div>
+      <div>
         <div class="lang_title">
           <span><img src="./aboutme/sqr.png" alt="" />Framework</span>
         </div>
@@ -185,6 +208,8 @@
           <li>CapyBara</li>
           <li>Selenium</li>
         </ul>
+      </div>
+      <div>
         <div class="lang_title">
           <span><img src="./aboutme/circle.png" alt="" />Skills</span>
         </div>
@@ -195,6 +220,7 @@
           <li>Gtlab</li>
           <li>Terminal</li>
         </ul>
+      </div>
       </div>
     </section>
     <div class="main">
@@ -209,8 +235,8 @@
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter text here"  maxlength="500"></textarea><br>
           <button type="submit" class="submitButton">Get in touch</button>
         </form>
-        <hr>
       </section>
+      <!-- <hr> -->
       <footer>
         <ul id="social_menu">
           <li>
