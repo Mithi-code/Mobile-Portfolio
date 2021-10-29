@@ -917,9 +917,8 @@ footer #social_menu {
   }
 }
 
-/*Mobile*/
-@media (max-width:767px) {
-  
+/* Mobile */
+@media (max-width: 767px) {
   nav {
     width: 100%;
   }
@@ -956,5 +955,4 @@ footer #social_menu {
     width: 100%;
     margin-left: 10%;
   }
-
 }
