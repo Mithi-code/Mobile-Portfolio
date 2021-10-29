@@ -34,6 +34,10 @@ header nav a {
   align-self: center;
 }
 
+#menu_content {
+  display: none;
+}
+
 #intro {
   width: 375px;
   margin: auto;
@@ -67,6 +71,10 @@ header nav a {
   font-family: "Poppins", sans-serif;
 }
 
+.background_image {
+  display: none;
+}
+
 #social_menu {
   display: flex;
   justify-content: space-between;
@@ -96,14 +104,6 @@ span img {
   height: 18px;
 }
 
-#work img {
-  justify-content: center;
-}
-
-#work_content {
-  margin: 24px 0 0 24px;
-}
-
 #work_name {
   color: #1c1a19;
   text-align: center;
@@ -125,6 +125,10 @@ span img {
 #work_info {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
+}
+
+#work_content2 {
+  padding: 24px;
 }
 
 .work_project p {
@@ -170,7 +174,6 @@ span img {
 }
 
 #P_button {
-  background-color: #ff6b00;
   color: #fff;
   font-size: 17px;
   width: 124px;
@@ -178,7 +181,29 @@ span img {
   margin: 10px 0 0 0;
 }
 
+#P_button:enabled {
+  background-color: #ff6b00;
+}
+
+#P_button:hover {
+  background-color: #fff5e1;
+  color: #e05304;
+  border: 1px solid #e05304;
+}
+
+#P_button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+#P_button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #5b5957;
+}
+
 .work_project {
+  position: relative;
   background: url(./workImg/work.png);
   height: 386px;
   width: 327px;
@@ -191,6 +216,13 @@ span img {
   font-family: "Inter", sans-serif;
   font-weight: normal;
   justify-content: center;
+}
+
+.visible {
+  height: 434px;
+  width: 327px;
+  background-image: url(./workss.png);
+  display: none;
 }
 
 .work_project h1 {
@@ -209,12 +241,35 @@ span img {
 
 .z {
   width: 327px;
-  background-color: #ff6b00;
   height: 48px;
   font-size: 17px;
   color: #fff;
   outline: none;
   border: none;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+.z:enabled {
+  background-color: #ff6b00;
+}
+
+.z:hover {
+  background-color: #fff5e1;
+  color: #e05304;
+  border: 1px solid #e05304;
+}
+
+.z:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.z:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #5b5957;
 }
 
 #about_me {
@@ -235,7 +290,6 @@ span img {
   height: 75vh;
   margin-left: 24px;
   margin-right: 24px;
-  border-bottom: 1px solid #fff;
 }
 
 #about_content h1 {
@@ -256,7 +310,6 @@ span img {
 }
 
 #about_content button {
-  background-color: #ff6b00;
   font-size: 17px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -264,6 +317,40 @@ span img {
   height: 48px;
   width: 161px;
   color: #fff;
+}
+
+#contact_form button {
+  width: 131px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  border-bottom: 3px solid #dfe1e6;
+  margin: 24px 122px 124px 85px;
+  transition: transform 0.2s;
+}
+
+#about_me button:enabled {
+  background-color: #ff6b00;
+}
+
+#about_me button:hover {
+  background-color: #fff5e1;
+  transform: scale(1.1);
+  color: #e05304;
+  border: 1px solid #e05304;
+}
+
+#about_me button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+#about_me button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #5b5957;
 }
 
 .lang_title {
@@ -277,9 +364,10 @@ span img {
 
 #about_language {
   display: grid;
-  margin-top: 130px;
   gap: 20px;
   margin-bottom: 130px;
+  border-top: 1px solid #fff;
+  padding-top: 146px;
 }
 
 #about_language li {
@@ -295,7 +383,7 @@ span img {
 #contact_form {
   width: 375px;
   margin: auto;
-  background: #e5e5e5;
+  background: #fff;
   height: 100%;
 }
 
@@ -321,33 +409,25 @@ form {
 }
 
 form input {
+  padding: 10px;
   border: none;
   outline: none;
-  background: #e5e5e5;
+  background: #fdf7f7;
   border-bottom: 1px solid #dbd8d7;
   color: #979493;
 }
 
 textarea {
   border: none;
-  background: #fbf8f7;
+  background: #fdf7f7;
   color: #3c3a39;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
 
-#contact_form button {
-  width: 131px;
-  height: 48px;
-  font-weight: 700;
+#contact_form button:enabled {
   background-color: #ff6b00;
-  font-size: 17px;
-  color: #fff;
-  border: none;
-  border-bottom: 3px solid #dfe1e6;
-  margin: 24px 122px 124px 85px;
-  transition: transform 0.2s;
 }
 
 #contact_form button:hover {
@@ -371,7 +451,8 @@ textarea {
 footer {
   margin: auto;
   width: 375px;
-  background: #e5e5e5;
+  background: #fff;
+  border-top: 1px solid #c3c7cf;
 }
 
 footer #social_menu {
@@ -387,4 +468,491 @@ footer #social_menu {
   border-style: solid;
   border-radius: 8px;
   border-bottom-width: 4px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 100%;
+    height: 72px;
+  }
+
+  nav a {
+    margin-left: 80px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #menu_content {
+    width: 300px;
+    display: flex;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px;
+    margin-right: 70px;
+    justify-content: space-between;
+  }
+
+  #menu_content img {
+    width: 22px;
+    height: 18px;
+  }
+
+  #intro {
+    height: 870px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    background-image: url(./main-background.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 480px 550px;
+  }
+
+  .background_image {
+    display: none;
+  }
+
+  #title {
+    font-size: 72px;
+    font-weight: normal;
+    margin-top: 192px;
+  }
+
+  #text1 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  #text2 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+
+  #intro_box {
+    width: 556px;
+    height: 739px;
+  }
+
+  #social_menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 279px;
+    width: 80px;
+    height: 200px;
+  }
+
+  #work {
+    width: 100%;
+  }
+
+  #work_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  #work_name {
+    width: 70%;
+    line-height: 52px;
+  }
+
+  #work_title img {
+    width: 65%;
+    height: 1%;
+    margin-left: 24px;
+    margin-top: 151px;
+  }
+
+  .b {
+    width: 48%;
+    height: 448px;
+    margin-top: 140px;
+  }
+
+  .visible {
+    display: grid;
+    position: relative;
+  }
+
+  .visible button {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .work_project {
+    width: 369px;
+    height: 435px;
+  }
+
+  .z {
+    width: 100%;
+  }
+
+  #work_content {
+    display: flex;
+  }
+
+  #work_content2 {
+    margin-top: 140px;
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #work_content2 p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #P_language {
+    display: flex;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  #about_me {
+    width: 100%;
+  }
+
+  #about_content {
+    background-image: url(./abnout_me.png);
+    background-position: right;
+    background-size: 600px 350px;
+  }
+
+  #about_language {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #contact_form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 3px solid #dfe1e6;
+  }
+
+  #contact_form p {
+    text-align: unset;
+    margin-top: 130px;
+  }
+
+  #contact_form p span {
+    display: unset;
+  }
+
+  #contact_form form {
+    margin-top: 140px;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer #social_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  #border {
+    display: none;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1080px) {
+  nav {
+    width: 100%;
+    height: 72px;
+  }
+
+  nav a {
+    margin-left: 154px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #menu_content {
+    width: 300px;
+    display: flex;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px;
+    margin-right: 154px;
+    justify-content: space-between;
+  }
+
+  #menu_content img {
+    width: 22px;
+    height: 18px;
+  }
+
+  #intro {
+    height: 870px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    background-image: none;
+    position: relative;
+  }
+
+  .background_image {
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #title {
+    font-size: 72px;
+    font-weight: normal;
+    margin-left: 100px;
+  }
+
+  #text1 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+    margin-left: 100px;
+  }
+
+  #text2 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-left: 100px;
+  }
+
+  #intro_box {
+    width: 45%;
+    height: 739px;
+  }
+
+  #social_menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 279px;
+    width: 80px;
+    height: 200px;
+  }
+
+  #work {
+    width: 100%;
+    padding: 0 141px;
+  }
+
+  #work_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  #work_name {
+    width: 70%;
+    line-height: 52px;
+    font-size: 40px;
+  }
+
+  #work_info {
+    font-size: 40px;
+  }
+
+  #work_title img {
+    width: 65%;
+    height: 1%;
+    margin-left: 24px;
+    margin-top: 151px;
+  }
+
+  .b {
+    width: 48%;
+    height: 448px;
+    margin-top: 140px;
+  }
+
+  .visible {
+    display: grid;
+    position: relative;
+  }
+
+  .visible button {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .work_project {
+    width: 100%;
+    height: 435px;
+  }
+
+  .z {
+    width: 100%;
+  }
+
+  #work_content {
+    display: flex;
+  }
+
+  #work_content2 {
+    margin-top: 140px;
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #work_content2 p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #P_language {
+    display: flex;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  #about_me {
+    width: 100%;
+    padding: 130px 0 130px 140px;
+  }
+
+  .u {
+    width: 50%;
+  }
+
+  .u h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 81px;
+  }
+
+  #about_content {
+    background-image: url(./abnout_me.png);
+    background-position: right;
+    background-size: 672px 350px;
+  }
+
+  #about_language {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 140px;
+  }
+
+  #contact_form {
+    width: 100%;
+    display: flex;
+    padding: 0 140px;
+  }
+
+  #contact_form p {
+    text-align: unset;
+    margin-top: 130px;
+    font-size: 40px;
+    padding: 20px;
+    width: 47%;
+    line-height: 52px;
+  }
+
+  #contact_form p span {
+    display: unset;
+  }
+
+  #contact_form form {
+    margin-top: 140px;
+    width: 60%;
+  }
+
+  .submitButton {
+    margin: 20px 0 !important;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer #social_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer ul li {
+    margin: 0 10px;
+  }
+
+  footer ul {
+    height: unset !important;
+  }
+
+  #border {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  nav {
+    width: 100%;
+  }
+
+  #intro {
+    width: 100%;
+  }
+
+  #work {
+    width: 100%;
+  }
+
+  .img {
+    width: 85%;
+  }
+
+  .work_project {
+    width: 90%;
+  }
+
+  .z {
+    width: 100%;
+  }
+
+  #about_me {
+    width: 100%;
+  }
+
+  #content_form {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    margin-left: 10%;
+  }
 }
