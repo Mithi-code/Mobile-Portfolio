@@ -26,6 +26,56 @@ nav {
   padding: 10px;
 }
 
+.animation {
+  position: relative;
+  font-size: 22px;
+}
+
+.animation span {
+  display: inline-block;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animation span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.animation span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.animation span:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.animation span:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+.animation span:nth-child(6) {
+  animation-delay: 1.1s;
+}
+
+.animation span:nth-child(7) {
+  animation-delay: 1.3s;
+}
+
+.animation span:nth-child(8) {
+  animation-delay: 1.5s;
+}
+
+.animation span:nth-child(9) {
+  animation-delay: 1.7s;
+}
+
+@keyframes animation {
+  0%,80% {
+    transform: rotateY(360deg);
+  }
+}
 header nav a {
   font-family: "Roboto", sans-serif;
   color: #fff5e1;
@@ -129,6 +179,10 @@ span img {
 
 #work_content2 {
   padding: 24px;
+}
+
+.work_project:hover {
+    transform: scale(1.1);
 }
 
 .work_project p {
@@ -395,6 +449,10 @@ span img {
   font-family: "Inter", sans-serif;
   color: #172b4d;
   line-height: 44px;
+}
+
+#contact_form p:hover {
+  transform: translate(20px);
 }
 
 #contact_form p span {
