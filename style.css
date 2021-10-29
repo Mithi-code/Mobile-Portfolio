@@ -104,10 +104,6 @@ span img {
   height: 18px;
 }
 
-#work img {
-  justify-content: center;
-}
-
 #work_name {
   color: #1c1a19;
   text-align: center;
@@ -919,4 +915,46 @@ footer #social_menu {
   #border {
     display: none;
   }
+}
+
+/*Mobile*/
+@media (max-width:767px) {
+  
+  nav {
+    width: 100%;
+  }
+
+  #intro {
+    width: 100%;
+  }
+
+  #work {
+    width: 100%;
+  }
+
+  .img {
+    width: 85%;
+  }
+
+  .work_project {
+    width: 90%;
+  }
+
+  .z {
+    width: 100%;
+  }
+
+  #about_me {
+    width: 100%;
+  }
+
+  #content_form {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    margin-left: 10%;
+  }
+
 }
