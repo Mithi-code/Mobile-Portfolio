@@ -72,10 +72,12 @@ nav {
 }
 
 @keyframes animation {
-  0%,80% {
+  0%,
+  80% {
     transform: rotateY(360deg);
   }
 }
+
 header nav a {
   font-family: "Roboto", sans-serif;
   color: #fff5e1;
@@ -181,10 +183,6 @@ span img {
   padding: 24px;
 }
 
-.work_project:hover {
-    transform: scale(1.1);
-}
-
 .work_project p {
   font-size: 16px;
   color: #fff;
@@ -270,6 +268,10 @@ span img {
   font-family: "Inter", sans-serif;
   font-weight: normal;
   justify-content: center;
+}
+
+.work_project:hover {
+  transform: scale(1.1);
 }
 
 .visible {
