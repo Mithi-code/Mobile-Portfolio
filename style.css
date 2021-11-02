@@ -94,7 +94,7 @@ header nav a {
   width: 375px;
   margin: auto;
   height: 90vh;
-  background: url("./image.png") 100% 100% no-repeat;
+  background: url("./Image/image.png") 100% 100% no-repeat;
   background-color: #1c1a19;
 }
 
@@ -277,7 +277,7 @@ span img {
 .visible {
   height: 434px;
   width: 327px;
-  background-image: url(./workss.png);
+  background-image: url(./Image/workss.png);
   display: none;
 }
 
@@ -567,7 +567,7 @@ footer #social_menu {
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
-    background-image: url(./main-background.png);
+    background-image: url(./Image/main-background.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 480px 550px;
@@ -686,7 +686,7 @@ footer #social_menu {
   }
 
   #about_content {
-    background-image: url(./abnout_me.png);
+    background-image: url(./Image/abnout_me.png);
     background-position: right;
     background-size: 600px 350px;
   }
@@ -912,7 +912,7 @@ footer #social_menu {
   }
 
   #about_content {
-    background-image: url(./abnout_me.png);
+    background-image: url(./Image/abnout_me.png);
     background-position: right;
     background-size: 672px 350px;
   }
