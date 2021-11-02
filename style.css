@@ -281,7 +281,7 @@ span img {
   display: none;
 }
 
-.work_project h1 {
+.work_project h2 {
   margin: 84px 0 0 0;
   color: #fff;
   font-family: "Crete Round", sans-serif;
@@ -348,7 +348,7 @@ span img {
   margin-right: 24px;
 }
 
-#about_content h1 {
+#about_content h2 {
   margin-top: 120px;
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
@@ -905,7 +905,7 @@ footer #social_menu {
     width: 50%;
   }
 
-  .u h1 {
+  .u h2 {
     font-size: 72px;
     font-weight: 400;
     line-height: 81px;
