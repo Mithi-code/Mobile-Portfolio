@@ -103,12 +103,12 @@ header nav a {
   margin-top: 75px;
 }
 
-.modal-menu ul {
-  line-height: 80px;
+.modal-menu ul li {
+  margin-bottom: 15px;
 }
 
 .modal-menu a {
-  margin: 16px;
+  padding: 16px;
   font-size: 32px;
   width: 227px;
   left: 0;
@@ -123,6 +123,7 @@ hr {
   height: 1px;
   border: none;
   background-color: #6f6c6b;
+  margin: 15px 0 15px 0;
 }
 
 .modal .close {
