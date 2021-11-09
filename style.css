@@ -414,7 +414,7 @@ span img {
   margin-right: 24px;
 }
 
-#about_content h2 {
+#about_content h4 {
   margin-top: 120px;
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
@@ -611,7 +611,7 @@ footer #social_menu {
   }
 
   .menu-content {
-    width: 700px;
+    width: 600px;
     display: flex;
     list-style: none;
     font-family: "Inter", sans-serif;
@@ -816,7 +816,7 @@ footer #social_menu {
   }
 
   .menu-content {
-    width: 700px;
+    width: 600px;
     display: flex;
     list-style: none;
     font-family: "Inter", sans-serif;
