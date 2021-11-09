@@ -103,8 +103,9 @@ header nav a {
   margin-top: 75px;
 }
 
-.modal-menu ul li {
-  margin-bottom: 15px;
+.modal-menu li {
+  padding: 15px;
+  border-bottom: 2px solid #6f6c6b ;
 }
 
 .modal-menu a {
@@ -117,13 +118,6 @@ header nav a {
   color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-}
-
-hr {
-  height: 1px;
-  border: none;
-  background-color: #6f6c6b;
-  margin: 15px 0 15px 0;
 }
 
 .modal .close {
@@ -193,7 +187,7 @@ hr {
   display: none;
 }
 
-#social_menu {
+.social_menu {
   display: flex;
   justify-content: space-between;
   width: 200px;
@@ -581,7 +575,7 @@ footer {
   border-top: 1px solid #c3c7cf;
 }
 
-footer #social_menu {
+footer .social_menu {
   margin-top: 25px;
   margin-left: 99px;
 }
@@ -666,7 +660,7 @@ footer #social_menu {
     height: 739px;
   }
 
-  #social_menu {
+  .social_menu {
     display: flex;
     flex-direction: column;
     margin-top: 279px;
@@ -788,7 +782,7 @@ footer #social_menu {
     justify-content: center;
   }
 
-  footer #social_menu {
+  footer .social_menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
@@ -875,7 +869,7 @@ footer #social_menu {
     height: 739px;
   }
 
-  #social_menu {
+  .social_menu {
     display: flex;
     flex-direction: column;
     margin-top: 279px;
@@ -1023,7 +1017,7 @@ footer #social_menu {
     justify-content: center;
   }
 
-  footer #social_menu {
+  footer .social_menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
