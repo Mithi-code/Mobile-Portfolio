@@ -1,5 +1,5 @@
 const modal = document.querySelector('.modal');
-const loginBtn = document.querySelector(.hamburger');
+const loginBtn = document.querySelector('.hamburger');
 const closeBtn = document.querySelector('.close');
 const nav = document.querySelector('.animation');
 const border = document.querySelector('.border1');
