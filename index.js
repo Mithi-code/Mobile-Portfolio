@@ -57,10 +57,9 @@ document.querySelectorAll('.work_main button').forEach((btn) => {
     if (btn.parentElement.querySelector('ul')) {
       data.list = btn.parentElement.querySelector('ul').innerText;
       document.querySelector('.popup-card ul').innerHTML = '';
-      for (let i = 1; i <= data.list.split('\n').length; i++) {
-        document.querySelector('.popup-card ul').innerHTML +=
-          `<li>${data.list.split('\n')[i - 1]}</li>`
-      }
+      data.list.split('\n').filter(m => m != undefined).forEach(m => {
+        document.querySelector('.popup-card ul').innerHTML = `${document.querySelector('.popup-card ul').innerHTML}<li>${m}</li>`;
+      })
     }
     document.querySelector('.popup-window').style.display = 'flex';
     document.querySelector('body').style.overflow = 'hidden';
