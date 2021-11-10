@@ -43,7 +43,7 @@ document.querySelectorAll('.work_main button').forEach((btn) => {
         .querySelector('.card-contents img')
         .setAttribute(
           'src',
-          './workImg/' + data.image[data.image.length - 1].replace('")', '')
+          `./workImg/${data.image[data.image.length - 1].replace('")', '')}`,
         );
     }
     if (btn.parentElement.querySelector('h4')) {
@@ -59,7 +59,7 @@ document.querySelectorAll('.work_main button').forEach((btn) => {
       document.querySelector('.popup-card ul').innerHTML = '';
       for (let i = 1; i <= data.list.split('\n').length; i++) {
         document.querySelector('.popup-card ul').innerHTML +=
-          '<li> ' + data.list.split('\n')[i - 1] + ' </li>';
+          `<li>${data.list.split('\n')[i - 1]}</li>`
       }
     }
     document.querySelector('.popup-window').style.display = 'flex';
