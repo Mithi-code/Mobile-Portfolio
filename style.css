@@ -162,11 +162,11 @@ header nav a {
 }
 
 .popup-body {
-color: #0d151e;
- width: 80%;
- background-color: #FFFFFF;
- padding: 16px;
- overflow-y: auto;
+  color: #0d151e;
+  width: 80%;
+  background-color: #ffffff;
+  padding: 16px;
+  overflow-y: auto;
 }
 
 .popup-header {
@@ -175,14 +175,14 @@ color: #0d151e;
   align-items: center;
 }
 
-.popup-card ul{
-display: flex;
-list-style: none;
-margin: 35px 0 34px 0;
+.popup-card ul {
+  display: flex;
+  list-style: none;
+  margin: 35px 0 34px 0;
 }
 
 .popup-card li {
-  color: #3C3A39;
+  color: #3c3a39;
   padding: 15px;
   border: 1px solid black;
   margin-right: 15px;
@@ -192,6 +192,12 @@ margin: 35px 0 34px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+
+span img {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
 }
 
 .card-contents img {
@@ -208,9 +214,7 @@ margin: 35px 0 34px 0;
   flex-direction: column;
   justify-content: space-between;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: #344563;
 }
 
 .mobile-text {
@@ -233,9 +237,9 @@ margin: 35px 0 34px 0;
   justify-content: space-between;
   font-size: 17px;
   color: #fff;
- background-color: #F55800;
- font-family: "Inter", sans-serif;
- font-weight: 700;
+  background-color: #f55800;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 .popup-btn img {
@@ -302,12 +306,6 @@ margin: 35px 0 34px 0;
   width: 375px;
   height: 100%;
   margin-bottom: 132px;
-}
-
-span img {
-  margin-right: 12px;
-  width: 18px;
-  height: 18px;
 }
 
 #work_name {
@@ -1151,11 +1149,11 @@ footer .social_menu {
 
   .card-contents {
     grid-template-columns: 1fr;
-   }
+  }
 
-   .btn-parent {
+  .btn-parent {
     justify-content: space-around;
-   }
+  }
 
   .img {
     width: 85%;
