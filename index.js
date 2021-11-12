@@ -112,7 +112,7 @@ const message = document.getElementById('message');
 const errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-  const mailformat =  /[A-Z]/g;
+  const mailformat = /[A-Z]/g;
   const messages = [];
   if (Name.value === '' || Name.value == null) {
     messages.push('Name is required');
@@ -120,8 +120,8 @@ form.addEventListener('submit', (e) => {
 
   if (email.value === '' || email.value == null) {
     messages.push('Email is required');
-  }else if (email.value.match(mailformat)){
-    messages.push('Enter valid email')
+  } else if (email.value.match(mailformat)) {
+    messages.push('Enter valid email');
   }
 
   if (message.value.length <= 5) {
