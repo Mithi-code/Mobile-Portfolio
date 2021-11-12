@@ -86,7 +86,7 @@ closeBtn1.addEventListener('click', () => {
 
 document.querySelectorAll('#work button').forEach((btn) => {
   btn.addEventListener('click', () => {
-    const id = parseInt(btn.className.match(/\d/)[0]);
+    const id = Number(btn.className.match(/\d/)[0]);
     const data = project.find((d) => d.id === id);
     if (data.header) {
       title.innerText = data.hedaer;
