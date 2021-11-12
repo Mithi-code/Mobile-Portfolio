@@ -146,8 +146,102 @@ header nav a {
   border-bottom-width: 4px;
 }
 
+.popup-window {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d151ecc;
+  z-index: 900;
+  overflow-y: hidden;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-body {
+  color: #0d151e;
+  width: 80%;
+  background-color: #fff;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-card ul {
+  display: flex;
+  list-style: none;
+  margin: 35px 0 34px 0;
+}
+
+.popup-card li {
+  color: #3c3a39;
+  padding: 15px;
+  border: 1px solid black;
+  margin-right: 15px;
+}
+
+.card-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+span img {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.card-contents img {
+  width: 100%;
+  height: 50vh;
+}
+
+.card-contents-info {
+  color: #344563;
+  line-height: 30px;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .menu-content {
   display: none;
+}
+
+.btn-parent {
+  display: flex;
+}
+
+.popup-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-right: 12px;
+  justify-content: space-between;
+  font-size: 17px;
+  color: #fff;
+  background-color: #f55800;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.popup-btn img {
+  margin-left: 8px;
+  width: 18px;
+  height: 18px;
 }
 
 #intro {
@@ -208,12 +302,6 @@ header nav a {
   width: 375px;
   height: 100%;
   margin-bottom: 132px;
-}
-
-span img {
-  margin-right: 12px;
-  width: 18px;
-  height: 18px;
 }
 
 #work_name {
@@ -337,7 +425,7 @@ span img {
 .visible {
   height: 434px;
   width: 327px;
-  background-image: url(./Image/workss.png);
+  background-image: url(./workImg/workss.png);
   display: none;
 }
 
@@ -1053,6 +1141,14 @@ footer .social_menu {
 
   #work {
     width: 100%;
+  }
+
+  .card-contents {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-parent {
+    justify-content: space-around;
   }
 
   .img {
