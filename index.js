@@ -66,6 +66,7 @@ const project = [
   },
 ];
 
+//For nav menu
 loginBtn.addEventListener('click', () => {
   loginBtn.style.display = 'none';
   nav.style.display = 'none';
@@ -79,6 +80,8 @@ closeBtn.addEventListener('click', () => {
   border.style.display = 'none';
 });
 
+
+// for popupwindow
 closeBtn1.addEventListener('click', () => {
   modal1.style.display = 'none';
   document.querySelector('body').style.overflow = 'auto';
@@ -103,3 +106,38 @@ document.querySelectorAll('#work button').forEach((btn) => {
     document.querySelector('body').style.overflow = 'hidden';
   });
 });
+
+//form validation
+const Name = document.getElementById('Name')
+const email = document.getElementById('email')
+const form = document.getElementById('form')
+const message = document.getElementById('message')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (Name.value === '' || Name.value == null) {
+    messages.push('Name is required')
+  }
+
+  if (email.value === '' || email.value == null) {
+    messages.push('Email is required')
+  }
+
+  if (message.value.length <= 5) {
+    messages.push('message must be longer than 5 characters')
+  }
+
+  if (message.value.length >= 500) {
+    messages.push('message must be less than 500 characters')
+  }
+
+  if (message.value === 'message') {
+    messages.push('message cannot be message')
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+  }
+})
